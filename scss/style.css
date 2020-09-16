@@ -36,14 +36,15 @@ body {
 header {
   background-color: #D7E2EF; }
 
-.header__container {
-  padding: 30px 0px;
+.header-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between; }
+.header__container {
+  padding: 30px 0px; }
 .header__left {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -98,3 +99,124 @@ header {
               align-items: center; }
       .menu__link-tel img {
         margin-right: 10px; }
+
+.header__actions {
+  padding: 103px 0px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.actions-header__services {
+  width: 48%;
+  padding-bottom: 165px; }
+
+.services-actions h1 {
+  font-family: 'Proba Pro SmBd';
+  font-size: 50px;
+  color: #4F5B6D;
+  max-width: 400px; }
+.services-actions__discount {
+  margin-top: 68px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 82%; }
+  .services-actions__discount p {
+    font-size: 20px;
+    color: #000;
+    max-width: 336px;
+    width: 100%;
+    line-height: 26px; }
+  .services-actions__discount span {
+    font-size: 50px;
+    font-family: 'Proba Pro SmBd'; }
+.services-actions .action-tip {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 35px; }
+  .services-actions .action-tip_item {
+    max-width: 150px; }
+    .services-actions .action-tip_item p {
+      color: #4F5B6D;
+      line-height: 20px; }
+    .services-actions .action-tip_item span {
+      font-family: 'Gilroy-SemiBold';
+      border-bottom: 3px solid #FD8D6F; }
+
+.header__form {
+  width: 49%; }
+
+.form-header {
+  background: url(../img/bg_form1.png) no-repeat;
+  background-size: 111%;
+  background-position: 12% -13%;
+  margin-bottom: -30px; }
+  .form-header__control {
+    float: right;
+    width: 81%; }
+    .form-header__control h4 {
+      font-size: 18px;
+      line-height: 22px;
+      font-family: 'Gilroy-SemiBold';
+      margin-bottom: 20px;
+      max-width: 328px; }
+
+#from-discover {
+  padding: 42px 50px;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  #from-discover input {
+    border: none;
+    border-bottom: 2px solid #000;
+    margin-bottom: 17px;
+    background-color: transparent;
+    padding: 10px 0px;
+    font-size: 16px;
+    font-family: 'Gilroy-Light'; }
+  #from-discover input::-webkit-input-placeholder {
+    color: #7888A2; }
+  #from-discover input:-ms-input-placeholder {
+    color: #7888A2; }
+  #from-discover input::-ms-input-placeholder {
+    color: #7888A2; }
+  #from-discover input::placeholder {
+    color: #7888A2; }
+  #from-discover button {
+    margin-top: 23px;
+    width: 150px;
+    font-family: 'Proba Pro SmBd';
+    color: #fff;
+    background-color: #000;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s; }
+    #from-discover button:hover {
+      background-color: #FD8D6F;
+      color: #000;
+      -webkit-transition: 0.3s;
+      transition: 0.3s; }
+
+@media screen and (max-width: 1500px) {
+  ._container {
+    width: 80%; } }
