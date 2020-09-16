@@ -217,6 +217,189 @@ header {
       -webkit-transition: 0.3s;
       transition: 0.3s; }
 
+.pacts {
+  padding: 198px 0px;
+  background-color: #D7E2EF; }
+  .pacts-circle {
+    position: absolute;
+    z-index: 1;
+    top: 16%;
+    right: 22%;
+    width: 38%; }
+
+.pacts-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative; }
+  .pacts-header__left {
+    width: 36%;
+    padding-top: 101px; }
+    .pacts-header__left h2 {
+      color: #4F5B6D;
+      font-size: 40px;
+      font-family: 'Proba Pro SmBd'; }
+  .pacts-header__right {
+    width: 48%;
+    max-width: 556px;
+    background: url(../img/woman1.webp) no-repeat;
+    background-size: 144%;
+    height: 373px;
+    background-position: 44% 43%;
+    z-index: 1; }
+
+.title {
+  font-family: inherit;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: inherit; }
+
+.paragraph {
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: inherit; }
+
+.main .tab {
+  width: 100%;
+  height: auto;
+  padding: 60px 0; }
+  .main .tab-info {
+    margin: 56px auto;
+    max-width: 750px; }
+    .main .tab-info p {
+      color: #FD8D6F;
+      border-left: 2px solid #fff;
+      padding-left: 20px;
+      font-size: 30px;
+      line-height: 32px; }
+  .main .tab-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    border-bottom: 1.3px solid #C5D1E0;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
+    .main .tab-menu-link {
+      position: relative;
+      overflow: hidden;
+      font-family: inherit;
+      font-size: 20px;
+      font-weight: 600;
+      line-height: inherit;
+      cursor: pointer;
+      width: 22%;
+      height: auto;
+      padding: 20px 0;
+      border-bottom: 2.5px solid transparent;
+      color: #667794;
+      -webkit-transition: all 0.3s ease;
+      transition: all 0.3s ease;
+      border: none;
+      background: unset; }
+      .main .tab-menu-link::before {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+        z-index: 2; }
+      .main .tab-menu-link.active {
+        bottom: 0px;
+        z-index: 0;
+        overflow: hidden;
+        border-bottom: 2.5px solid #FD8D6F;
+        color: #FD8D6F; }
+  .main .tab-bar {
+    padding: 56px 0;
+    overflow: hidden; }
+    .main .tab-bar-content {
+      display: none;
+      width: 100%;
+      min-height: 10rem;
+      -webkit-transition: all 0.3s ease;
+      transition: all 0.3s ease; }
+      .main .tab-bar-content.active {
+        display: block; }
+
+.tab-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .tab-content__system {
+    width: 15%;
+    margin-top: 30px; }
+    .tab-content__system h5 {
+      font-family: 'Gilroy-SemiBold';
+      color: #000;
+      font-size: 18px;
+      margin-bottom: 30px; }
+    .tab-content__system li {
+      color: #667794;
+      font-family: 'Gilroy-Light';
+      font-size: 16px;
+      padding: 11px 0px;
+      line-height: 22px;
+      border-top: 1px solid #fff; }
+
+.paks-content {
+  width: 41%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 351px; }
+  .paks-content__item {
+    background-color: #DFE8F3;
+    border-radius: 4px;
+    text-align: center;
+    -webkit-box-shadow: 0 17px 17px rgba(0, 0, 0, 0.08);
+            box-shadow: 0 17px 17px rgba(0, 0, 0, 0.08);
+    width: 47%;
+    max-height: 375px; }
+    .paks-content__item h5 {
+      font-family: 'Gilroy-SemiBold';
+      color: #000;
+      font-size: 18px;
+      border: 1px solid #D7DFEA;
+      padding: 32px; }
+    .paks-content__item ul li {
+      color: #667794;
+      font-family: 'Gilroy-Light';
+      padding: 23px 0px;
+      border: 1px solid #D7DFEA; }
+      .paks-content__item ul li:last-child {
+        border: none; }
+
+.prices-content {
+  width: 32%;
+  font-size: 15px; }
+  .prices-content__about {
+    color: #4F5B6D;
+    font-family: 'Gilroy-SemiBold';
+    margin-bottom: 27px;
+    line-height: 24px; }
+  .prices-content__description {
+    font-family: 'Gilroy-Light';
+    color: #667794;
+    line-height: 23px;
+    margin-bottom: 30px; }
+
 @media screen and (max-width: 1500px) {
   ._container {
     width: 80%; } }
