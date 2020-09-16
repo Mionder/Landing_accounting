@@ -59,11 +59,12 @@ header{
 }
 .header {
     // .header__container
-
-    &__container {
-        padding: 30px 0px;
+    &-wrapper{
         display: flex;
         justify-content: space-between;
+    }
+    &__container {
+        padding: 30px 0px;
     }
     //.header__left
     &__left{
@@ -132,6 +133,155 @@ header{
                 margin-right: 10px;
             }
         }
+    }
+}
+
+
+.header {
+
+    // .header__actions
+
+    &__actions {
+        padding: 103px 0px 0px;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+.actions-header {
+
+    // .actions-header__services
+
+    &__services {
+        width: 48%;
+        padding-bottom: 165px;
+    }
+}
+.services-actions {
+    h1{
+        font-family: 'Proba Pro SmBd';
+        font-size: 50px;
+        color: #4F5B6D;
+        max-width: 400px;
+    }
+    // .services-actions__discount
+
+    &__discount {
+        margin-top: 68px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 82%;
+        p{
+            font-size: 20px;
+            color: #000;
+            max-width: 336px;
+            width: 100%;
+            line-height: 26px;
+        }
+        span{
+            font-size: 50px;
+            font-family: 'Proba Pro SmBd';
+        }   
+
+    // .services-actions__tips
+
+    &__tips {
+    }
+}
+.action-tip {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 35px;
+    // .action-tip_item
+
+    &_item {
+        max-width: 150px;
+        p{
+           color: #4F5B6D;
+           line-height: 20px;
+        }
+        span{
+            font-family: 'Gilroy-SemiBold';
+            border-bottom:3px solid #FD8D6F;
+        }
+    }
+    }
+}
+
+.header {
+
+    // .header__form
+
+    &__form {
+        width: 49%;
+    }
+}
+.form-header {
+    background: url(../img/bg_form1.png) no-repeat;
+    background-size: 111%;
+    background-position: 12% -13%;
+    margin-bottom: -30px;
+    // .form-header__control
+
+    &__control {
+        float: right;
+        width: 81%;
+        h4{
+            font-size: 18px;
+            line-height: 22px;
+            font-family: 'Gilroy-SemiBold';
+            margin-bottom: 20px;
+            max-width: 328px;
+        }
+    }
+
+    // .form-header__submit
+
+    &__submit {
+    }
+}
+
+
+
+#from-discover,
+#form__info{
+   padding: 42px 50px;
+   border-radius: 10px;
+   display: flex;
+   flex-direction: column;
+   input{
+       border: none;
+       border-bottom: 2px solid #000;
+       margin-bottom: 17px;
+       background-color: transparent;
+       padding: 10px 0px;
+       font-size: 16px;
+       font-family: 'Gilroy-Light';
+   }
+   input::placeholder{
+       color: #7888A2;
+   }
+   button{
+        margin-top: 23px;
+        width: 150px;
+        font-family: 'Proba Pro SmBd';
+        color: #fff;
+        background-color: #000;
+        border: none;
+        border-radius: 5px;
+        padding: 10px;
+        transition: 0.3s;
+        &:hover{
+           background-color: #FD8D6F;
+           color: #000;
+           transition: 0.3s;
+        }
+   }
+}
+
+@media screen and (max-width: 1500px){
+    ._container {
+        width: 80%;
     }
 }
 
@@ -221,3 +371,173 @@ header{
     }
 }
 
+// SERVICES 
+
+.services{
+    padding-top: 100px;
+    padding-bottom: 170px;
+    .services__title{
+        font-family: "Proba Pro SmBd";
+        font-size: 40px;
+        font-weight: 400;
+        line-height: 40px;
+        color: #fd8d6f;
+        max-width: 635px;
+        margin: auto;
+        text-align: center;
+        margin-bottom: 71px;
+        span{
+            color: #4f5b6d;
+        }
+    }
+    .M__block{
+        display: flex;
+        justify-content: center;
+        position: relative;
+        opacity: 0.5;
+        z-index: 1;
+        .services__M{
+            z-index: 1;
+            transform: translateY(-45px);
+            position: absolute;
+        }
+    }
+
+    .services__wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        justify-content: space-between;
+        .services__item{
+            border-radius: 10px;
+            background-color: #dbe7f3;
+            width: 361px;
+            // height: 181px;
+            margin-bottom: 30px;
+            padding: 72px 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .services__item-label{
+                color: #667794;
+                font-size: 16px;
+                line-height: 21px;
+                font-family: "Gilroy-SemiBold";
+                max-width: 284px;
+                text-align: center;
+                span{
+                    color: #4f5b6d;
+                    font-family: "Gilroy-Light";
+                }
+            }
+        }
+    }
+
+}
+
+// ADVANTAGES
+
+
+.advantages{
+    padding-top: 200px;
+    margin-bottom: 99px;
+    .advantages__wrapper{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 56px;
+        .advantages__wrapper-info{
+            display: flex;
+            flex-direction: column;
+            max-width: 355px;
+            .advantages__wrapper-info__title{
+                font-family: "Proba Pro SmBd";
+                font-size: 40px;
+                font-weight: 400;
+                line-height: 40px;
+                color: #4f5b6d;
+                max-width: 325px;
+                margin-bottom: 69px;
+                span{
+                    color: #fd8d6f;
+                }
+            }
+        }
+    }
+    .advantages__list{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .advantages__saving{
+        margin-top: 113px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .advantages__saving-info{
+            max-width: 450px;
+            .advantages__saving-title{
+                color: #4f5b6d;
+                font-family: "Proba Pro SmBd";
+                font-size: 30px;
+                line-height: 34px;
+                max-width: 350px;
+
+            }
+            span{
+                color: #fd8d6f;
+            }
+            .advantages__saving-subtitle{
+                color: #667794;
+                font-family: "Proba Pro";
+                font-size: 24px;
+                line-height: 30px;
+                margin-top: 22px;
+            }
+        }
+        .advantages__saving-form{
+            .advantages__saving-form__title{
+                color: #000000;
+                font-family: "Gilroy-SemiBold";
+                font-size: 17px;
+                line-height: 21px;
+                margin-bottom: 25px;
+            }
+        }
+    }
+}
+
+.advantages__item{
+    max-width: 334px;
+    .advantages__item-title{
+        margin-bottom: 25px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .adv__title{
+            color: #4f5b6d;
+            font-family: "Gilroy-SemiBold";
+            font-size: 16px;
+            line-height: 21px;
+            text-decoration: 2px underline solid #fd8e6f62;
+            // text-decoration-color: #fd8e6f62;
+        }
+        img{ 
+            margin-right: 23px;  
+            height: 28px;
+        }
+    }
+    .advantages__item-information{
+        color: #667794;
+        font-family: "Gilroy-Light";
+        font-size: 15px;
+        line-height: 21px;
+    }
+}
+
+#form__info{
+    border-radius: 10px;
+    background-color: #dbe7f3;
+    padding: 69px 69px 62px 69px;
+    max-width: 555px;
+}
