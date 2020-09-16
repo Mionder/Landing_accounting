@@ -29,7 +29,7 @@ body {
   font-family: 'Proba Pro'; }
 
 ._container {
-  width: 59%;
+  width: 69%;
   margin: 0 auto; }
 
 header {
@@ -140,13 +140,15 @@ header {
       max-width: 328px; }
 
 #from-discover,
-#form__info {
+#form__info,
+#form__question {
   padding: 42px 50px;
   border-radius: 10px;
   display: flex;
   flex-direction: column; }
   #from-discover input,
-  #form__info input {
+  #form__info input,
+  #form__question input {
     border: none;
     border-bottom: 2px solid #000;
     margin-bottom: 17px;
@@ -155,10 +157,12 @@ header {
     font-size: 16px;
     font-family: 'Gilroy-Light'; }
   #from-discover input::placeholder,
-  #form__info input::placeholder {
+  #form__info input::placeholder,
+  #form__question input::placeholder {
     color: #7888A2; }
   #from-discover button,
-  #form__info button {
+  #form__info button,
+  #form__question button {
     margin-top: 23px;
     width: 150px;
     font-family: 'Proba Pro SmBd';
@@ -169,7 +173,8 @@ header {
     padding: 10px;
     transition: 0.3s; }
     #from-discover button:hover,
-    #form__info button:hover {
+    #form__info button:hover,
+    #form__question button:hover {
       background-color: #FD8D6F;
       color: #000;
       transition: 0.3s; }
@@ -467,10 +472,19 @@ header {
     display: flex;
     justify-content: space-between;
     margin-bottom: 56px; }
+    .advantages .advantages__wrapper .advantages__wrapper-image {
+      position: relative; }
+      .advantages .advantages__wrapper .advantages__wrapper-image img {
+        max-width: 585px;
+        height: auto;
+        width: 100%;
+        z-index: 1;
+        position: relative; }
     .advantages .advantages__wrapper .advantages__wrapper-info {
       display: flex;
       flex-direction: column;
-      max-width: 355px; }
+      max-width: 355px;
+      padding-left: 40px; }
       .advantages .advantages__wrapper .advantages__wrapper-info .advantages__wrapper-info__title {
         font-family: "Proba Pro SmBd";
         font-size: 40px;
@@ -491,7 +505,8 @@ header {
     justify-content: space-between;
     align-items: center; }
     .advantages .advantages__saving .advantages__saving-info {
-      max-width: 450px; }
+      max-width: 450px;
+      padding-right: 20px; }
       .advantages .advantages__saving .advantages__saving-info .advantages__saving-title {
         color: #4f5b6d;
         font-family: "Proba Pro SmBd";
@@ -540,3 +555,226 @@ header {
   background-color: #dbe7f3;
   padding: 69px 69px 62px 69px;
   max-width: 555px; }
+
+#form__question {
+  border-radius: 10px;
+  background-color: #dbe7f3;
+  max-width: 555px;
+  padding: 69px 69px 62px 69px;
+  min-width: 455px; }
+
+.workprocess {
+  padding-top: 99px;
+  padding-bottom: 200px; }
+  .workprocess .workprocess__title {
+    color: #4f5b6d;
+    font-family: "Proba Pro SmBd";
+    font-size: 40px;
+    text-align: center;
+    line-height: 40px;
+    padding-bottom: 70px; }
+  .workprocess .workprocess__wrapper {
+    display: flex;
+    justify-content: center; }
+    .workprocess .workprocess__wrapper .workprocess__item {
+      max-width: 391px;
+      max-height: 391px;
+      height: 280px;
+      width: 280px;
+      border-radius: 50%;
+      border: 1px solid rgba(0, 0, 0, 0.29);
+      color: #000000;
+      font-family: "Gilroy-SemiBold";
+      font-size: 18px;
+      transition: 0.5s;
+      line-height: 26px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      text-align: center; }
+      .workprocess .workprocess__wrapper .workprocess__item span {
+        max-width: 227px; }
+    .workprocess .workprocess__wrapper .workprocess__item:first-child {
+      transform: translateX(15px); }
+    .workprocess .workprocess__wrapper .workprocess__item:last-child {
+      transform: translateX(-15px); }
+    .workprocess .workprocess__wrapper .workprocess__item:hover {
+      background-color: #fd8e6fe8;
+      border: none;
+      transition: 0.5s; }
+
+.about {
+  padding-top: 199px;
+  padding-bottom: 197px;
+  background-color: #d7e2ef; }
+  .about .about__wrapper {
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .about .about__wrapper .about__wrapper-info {
+      max-width: 330px; }
+      .about .about__wrapper .about__wrapper-info .about__title {
+        color: #4f5b6d;
+        font-family: "Proba Pro SmBd";
+        font-size: 60px;
+        line-height: 40px;
+        margin-bottom: 51px; }
+      .about .about__wrapper .about__wrapper-info .about__subtitle {
+        color: #667794;
+        font-family: "Proba Pro";
+        font-size: 24px;
+        line-height: 26px; }
+  .about .about__details {
+    display: flex;
+    justify-content: space-between; }
+    .about .about__details .about__details-item .experience {
+      color: #4f5b6d;
+      font-family: "Proba Pro SmBd";
+      font-size: 30px;
+      line-height: 36px;
+      max-width: 300px;
+      display: block; }
+    .about .about__details .about__details-item .details__item-info {
+      max-width: 287px;
+      color: #667794;
+      font-size: 15px;
+      line-height: 21px;
+      color: #4f5b6d;
+      font-family: "Gilroy-SemiBold"; }
+      .about .about__details .about__details-item .details__item-info span {
+        font-family: "Gilroy-Light";
+        display: block; }
+
+.contacts {
+  padding-top: 100px;
+  padding-bottom: 200px; }
+  .contacts .contacts__wrapper {
+    display: flex;
+    justify-content: space-between; }
+    .contacts .contacts__wrapper .contacts__info {
+      max-width: 270px; }
+      .contacts .contacts__wrapper .contacts__info .contacts__title {
+        color: #4f5b6d;
+        font-family: "Proba Pro SmBd";
+        font-size: 60px;
+        line-height: 60px;
+        margin-bottom: 58px; }
+      .contacts .contacts__wrapper .contacts__info .contacts__item .contacts__item-title {
+        color: #4f5b6d;
+        font-family: "Gilroy-SemiBold";
+        font-size: 15px;
+        line-height: 21px;
+        margin-bottom: 11px; }
+      .contacts .contacts__wrapper .contacts__info .contacts__item .contacts__item-info {
+        color: #667794;
+        font-size: 15px;
+        font-family: "Gilroy-Light";
+        line-height: 21px;
+        text-decoration: none;
+        display: flex;
+        margin-bottom: 27px; }
+        .contacts .contacts__wrapper .contacts__info .contacts__item .contacts__item-info .telegram__icon {
+          margin: 0px 15px 0px 20px; }
+
+.for-whom {
+  padding-top: 197px;
+  padding-bottom: 100px; }
+  .for-whom .for-whom__wrapper {
+    display: flex;
+    justify-content: space-between; }
+    .for-whom .for-whom__wrapper .for-whom__wrapper-info {
+      padding-left: 35px; }
+      .for-whom .for-whom__wrapper .for-whom__wrapper-info .for-whom__title {
+        color: #4f5b6d;
+        font-family: "Proba Pro SmBd";
+        font-size: 40px;
+        line-height: 40px;
+        margin-bottom: 62px; }
+      .for-whom .for-whom__wrapper .for-whom__wrapper-info .for-whom__advertisement {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 550px;
+        justify-content: space-between; }
+        .for-whom .for-whom__wrapper .for-whom__wrapper-info .for-whom__advertisement .for-whom__item {
+          display: flex;
+          align-items: flex-start;
+          max-width: 270px;
+          margin-bottom: 41px; }
+          .for-whom .for-whom__wrapper .for-whom__wrapper-info .for-whom__advertisement .for-whom__item img {
+            margin-right: 19px;
+            min-width: 22px;
+            height: auto; }
+          .for-whom .for-whom__wrapper .for-whom__wrapper-info .for-whom__advertisement .for-whom__item .for-whom__item-info {
+            font-size: 15px;
+            line-height: 21px;
+            color: #4f5b6d;
+            font-family: "Gilroy-SemiBold"; }
+            .for-whom .for-whom__wrapper .for-whom__wrapper-info .for-whom__advertisement .for-whom__item .for-whom__item-info span {
+              font-family: "Gilroy-Light";
+              color: #667794;
+              display: block; }
+  .for-whom .other__questions {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .for-whom .other__questions .other__questions-title {
+      color: #4f5b6d;
+      font-family: "Proba Pro SmBd";
+      font-size: 30px;
+      line-height: 36px;
+      max-width: 255px; }
+
+.footer {
+  background-color: #d7e2ef; }
+  .footer .footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 202px; }
+    .footer .footer__wrapper .footer__logo {
+      max-width: 250px; }
+      .footer .footer__wrapper .footer__logo p {
+        color: #667794;
+        font-size: 15px;
+        font-family: "Gilroy-Light";
+        line-height: 19px;
+        margin-top: 11px; }
+    .footer .footer__wrapper .footer__copyright {
+      max-width: 155px;
+      opacity: 0.45;
+      color: #667794;
+      font-size: 14px;
+      font-family: "Gilroy-Light";
+      line-height: 21px; }
+    .footer .footer__wrapper .footer_navigation .footer__item {
+      cursor: pointer;
+      color: #000;
+      font-family: "Gilroy-SemiBold";
+      font-size: 15px;
+      transition: 0.5s;
+      line-height: 30px; }
+    .footer .footer__wrapper .footer_navigation .footer__item:hover {
+      color: #fd8d6f;
+      transition: 0.5s; }
+    .footer .footer__wrapper .footer__social {
+      max-width: 370px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end; }
+      .footer .footer__wrapper .footer__social .footer__social-icons a {
+        cursor: pointer; }
+      .footer .footer__wrapper .footer__social .footer__social-icons a:nth-child(2) {
+        margin: 0px 16px; }
+      .footer .footer__wrapper .footer__social .advertisement {
+        margin-top: 44px;
+        display: flex; }
+        .footer .footer__wrapper .footer__social .advertisement .footer__social-label {
+          color: #667794;
+          font-family: "Gilroy-Light";
+          font-size: 13px;
+          line-height: 24px;
+          letter-spacing: 0.31px;
+          margin-right: 11px; }
