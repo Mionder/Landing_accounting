@@ -1,0 +1,136 @@
+@font-face {
+    font-family: 'Proba Pro';
+    src: url('../fonts/ProbaPro-Regular.woff2') format('woff2'),
+        url('../fonts/ProbaPro-Regular.woff') format('woff'),
+        url('../fonts/ProbaPro-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gilroy-Light';
+    src: url('../fonts/Gilroy-Light.woff2') format('woff2'),
+        url('../fonts/Gilroy-Light.woff') format('woff'),
+        url('../fonts/Gilroy-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'Gilroy-SemiBold';
+    src: url('../fonts/Gilroy-SemiBold.woff2') format('woff2'),
+        url('../fonts/Gilroy-SemiBold.woff') format('woff'),
+        url('../fonts/Gilroy-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Proba Pro SmBd';
+    src: url('../fonts/ProbaPro-SemiBold.woff2') format('woff2'),
+        url('../fonts/ProbaPro-SemiBold.woff') format('woff'),
+        url('../fonts/ProbaPro-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Proba Pro';
+}
+
+// ._container
+
+._container {
+    width: 59%;
+    margin: 0 auto;
+}
+
+header{
+    background-color:#D7E2EF;    
+}
+.header {
+    // .header__container
+
+    &__container {
+        padding: 30px 0px;
+        display: flex;
+        justify-content: space-between;
+    }
+    //.header__left
+    &__left{
+        display: flex;
+        justify-content: space-between;
+        max-width: 350px;
+        align-items: center;
+        width: 40%;
+        a{
+            margin-right: 11px;
+        }
+        p{
+           color: #667794;
+           font-size: 16px;
+        }
+    }
+    // .header__logo
+
+    &__logo {
+    }
+
+    // .header__menu
+
+    &__menu {
+    }
+}
+
+.menu {
+    max-width: 453px;
+    width: 100%;
+    // .menu__body
+
+    &__body {
+        padding-bottom: 22px;
+        border-bottom: 1px solid #CAD5E1
+    }
+
+    // .menu__list
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        li{
+            font-family: 'Proba Pro SmBd';
+            a{
+                text-decoration: none;
+            }
+        }
+    }
+
+    // .menu__link
+
+    &__link {
+        color: #000000;
+        &-active{
+            color: #FD8D6F;
+            border-bottom: 2px solid #FD8D6F;
+            padding-bottom: 19px;
+        }
+        &-tel{
+            color: #FD8D6F;
+            display: flex;
+            align-items: center;
+            img{
+                margin-right: 10px;
+            }
+        }
+    }
+}
