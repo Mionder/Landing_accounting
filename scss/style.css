@@ -23,8 +23,7 @@
   font-style: normal;
   font-display: swap; }
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
+  box-sizing: border-box; }
 
 body {
   font-family: 'Proba Pro'; }
@@ -38,23 +37,13 @@ header {
 
 .header__container {
   padding: 30px 0px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
+  justify-content: space-between; }
 .header__left {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   max-width: 350px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   width: 40%; }
   .header__left a {
     margin-right: 11px; }
@@ -69,15 +58,9 @@ header {
     padding-bottom: 22px;
     border-bottom: 1px solid #CAD5E1; }
   .menu__list {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; }
+    justify-content: space-between;
+    align-items: center; }
     .menu__list li {
       font-family: 'Proba Pro SmBd'; }
       .menu__list li a {
@@ -90,11 +73,77 @@ header {
       padding-bottom: 19px; }
     .menu__link-tel {
       color: #FD8D6F;
-      display: -webkit-box;
-      display: -ms-flexbox;
       display: flex;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center; }
+      align-items: center; }
       .menu__link-tel img {
         margin-right: 10px; }
+
+.questions__wrapper {
+  padding-top: 200px;
+  padding-bottom: 102px;
+  display: flex;
+  justify-content: space-between; }
+  .questions__wrapper .questions__image {
+    position: relative; }
+    .questions__wrapper .questions__image .questions__img {
+      max-width: 389px;
+      height: auto;
+      z-index: 1;
+      position: relative; }
+  .questions__wrapper .questions__image::before {
+    content: url(../img/Ellipse.webp);
+    left: -67px;
+    position: absolute;
+    bottom: 0px;
+    position: absolute;
+    max-width: 371px;
+    height: auto; }
+  .questions__wrapper .questions__info {
+    padding-left: 20px;
+    max-width: 520px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; }
+    .questions__wrapper .questions__info .questions__info-title {
+      color: #4f5b6d;
+      font-family: "Proba Pro SmBd";
+      font-size: 40px;
+      line-height: 40px;
+      padding-bottom: 59px;
+      max-width: 240px; }
+    .questions__wrapper .questions__info .questions__list {
+      display: flex;
+      flex-wrap: wrap; }
+      .questions__wrapper .questions__info .questions__list .questions__item {
+        position: relative;
+        max-width: 224px;
+        padding-left: 15px;
+        padding-bottom: 29px;
+        display: flex;
+        flex-direction: column; }
+        .questions__wrapper .questions__info .questions__list .questions__item .questions__item-title {
+          color: #667794;
+          font-family: "Gilroy-SemiBold";
+          font-size: 15px;
+          line-height: 21px; }
+        .questions__wrapper .questions__info .questions__list .questions__item .questions__item-information {
+          font-family: "Gilroy-Light";
+          color: #4f5b6d;
+          font-size: 15px; }
+      .questions__wrapper .questions__info .questions__list .questions__item::before {
+        color: #fd8d6f;
+        content: ".";
+        font-size: 40px;
+        top: -21px;
+        left: 0;
+        position: absolute; }
+    .questions__wrapper .questions__info .decision {
+      margin-top: 48px;
+      max-width: 322px;
+      padding-left: 29px;
+      border-left: 4px solid #d7e2ef; }
+    .questions__wrapper .questions__info .decision__label {
+      color: #fd8d6f;
+      font-family: "Proba Pro";
+      font-size: 30px;
+      line-height: 30px; }
