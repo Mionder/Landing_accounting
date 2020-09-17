@@ -680,7 +680,7 @@ $color-red-light: #FD8D6F;
             width: 31%;
             height: 182px;
             margin-bottom: 30px;
-            padding: 72px 0px;
+            padding: 72px 5px;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -746,6 +746,7 @@ $color-red-light: #FD8D6F;
             flex-direction: column;
             max-width: 375px;
             width: 56%;
+            padding-left: 25px;
             .advantages__wrapper-info__title{
                 font-family: "Proba Pro SmBd";
                 font-size: 40px;
@@ -1005,9 +1006,14 @@ $color-red-light: #FD8D6F;
     .contacts__wrapper{
         display: flex;
         justify-content: space-between;
+        .contacts__map iframe{
+            width: 555px;
+            height: 402px;
+        }
         .contacts__info{
             width: 40%;
             padding-top: 32px;
+            padding-left: 30px;
             .contacts__title{
                 color: #4f5b6d;
                 font-family: "Proba Pro SmBd";
