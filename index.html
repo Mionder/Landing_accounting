@@ -5,13 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing</title>
     <link rel="stylesheet" href="scss/reset.css">
+    <link rel="stylesheet" href="scss/animate.css">
     <link rel="stylesheet" href="scss/style.css">
     <link rel="stylesheet" href="scss/media.css">
 
 </head>
 <body>
     <!-- Back to top button -->
-    <a id="button"></a>
+    <a id="button">
+        <img src="img/up-arrow.svg" alt="up">
+    </a>
 
     <header>
         <div class="header__container _container">
@@ -20,7 +23,7 @@
                 <a class="header__logo" href="#"><img src="img/logo.svg" alt="logo"></a>
                 <p>Надежный фундамент для Вашего бизнеса</p>
             </div>
-            <div class="header__menu menu">
+            <div class="header__menu menu desktop-menu">
                 <nav class="menu__body">
                     <ul class="menu__list" id="menu">
                         <li><a href="#yak1" class="menu__link menu__link-active">О нас </a></li>
@@ -30,9 +33,25 @@
                     </ul>
                 </nav>
             </div>
+            <div class="header-mob">
+                <input id="burger" type="checkbox" />
+                <label for="burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <nav>    
+                    <ul id="menu">
+                        <li><a class="menu__link-active" href="#yak1">О нас </a></li>
+                        <li><a href="#yak2" >Услуги</a></li>
+                        <li><a href="#yak3">Контакты</a></li>
+                        <li><a href="tel:+380979086605" class="menu__link menu__link-tel"><img src="img/tel.svg" alt="phone"> +38 (097) 908-66-05</a></li>
+                    </ul>
+                </nav>
+            </div>
             </div>
             <div class="header__actions actions-header">
-                <div class="actions-header__services services-actions">
+                <div class="actions-header__services services-actions wow fadeInLeft">
                     <h1>Комплексные бухгалтерские  услуги для малого  и среднего  бизнеса</h1>
                     <div class="services-actions__discount">
                          <p>Сократите расходы на бухгалтерию до и сдавайте отчетность точно в срок!</p>
@@ -53,7 +72,7 @@
                          </div>
                     </div>
                 </div>
-                <div class="header__form form-header">
+                <div class="header__form form-header wow fadeInRight">
                     <div class="form-header__control">
                         <h4>Узнайте, сколько будет стоить бухгалтерское обслуживание вашего бизнеса прямо сейчас </h4>
                         <form action="#" name="discover" id="from-discover">
@@ -70,14 +89,14 @@
     <section class="questions">
         <div class="_container">
             <div class="questions__wrapper">
-                <div class="questions__image">
+                <div class="questions__image wow pulse">
                     <img src="./img/questions_img.webp" class="questions__img" alt="questions_image">
                 </div>
                 <div class="questions__info">
-                    <h3 class="questions__info-title">Вам знакомы эти вопросы?</h3>
+                    <h3 class="questions__info-title wow bounceInDown">Вам знакомы эти вопросы?</h3>
                     <nav>
                         <ul class="questions__list">
-                            <li class="questions__item">
+                            <li class="questions__item ">
                                 <h6 class="questions__item-title">Большая текучесть </h6>
                                 <p class="questions__item-information">в бухгалтерии из-за невысокой зарплаты</p>
                             </li>
@@ -124,16 +143,16 @@
                 </div>
 
             <div class="services__wrapper">
-                <div class="services__item"><p class="services__item-label">Постановка и ведение <span>бухгалтерского учета</span></p></div>
-                <div class="services__item"><p class="services__item-label"><span>Оказание услуг </span>главного бухгалтера</p></div>
-                <div class="services__item"><p class="services__item-label"><span>Восстановление </span>бухгалтерского и налогового учета</p></div>
-                <div class="services__item"><p class="services__item-label"><span>Контроль ведения учета </span>и составления отчетности</p></div>
-                <div class="services__item"><p class="services__item-label"><span>Расчёт </span> заработной платы <span>и кадровый учет </span></p></div>
-                <div class="services__item"><p class="services__item-label"> <span>Расчёт </span>налогов и сборов</p></div>
-                <div class="services__item"><p class="services__item-label">Автоматизация <span>бухгалтерского и налогового учета </span></p></div>
-                <div class="services__item"><p class="services__item-label"><span>Помощь в</span> решении проблемных ситуаций <span>(разблокирование
+                <div class="services__item wow pulse"><p class="services__item-label">Постановка и ведение <span>бухгалтерского учета</span></p></div>
+                <div class="services__item wow pulse"><p class="services__item-label"><span>Оказание услуг </span>главного бухгалтера</p></div>
+                <div class="services__item wow pulse"><p class="services__item-label"><span>Восстановление </span>бухгалтерского и налогового учета</p></div>
+                <div class="services__item wow pulse"><p class="services__item-label"><span>Контроль ведения учета </span>и составления отчетности</p></div>
+                <div class="services__item wow pulse"><p class="services__item-label"><span>Расчёт </span> заработной платы <span>и кадровый учет </span></p></div>
+                <div class="services__item wow pulse"><p class="services__item-label"> <span>Расчёт </span>налогов и сборов</p></div>
+                <div class="services__item wow pulse"><p class="services__item-label">Автоматизация <span>бухгалтерского и налогового учета </span></p></div>
+                <div class="services__item wow pulse"><p class="services__item-label"><span>Помощь в</span> решении проблемных ситуаций <span>(разблокирование
                     расчетного счета, штрафы от налоговой и т.д.)</span></p></div>
-                <div class="services__item"><p class="services__item-label">Подготовка и подача отчетности <span>в соответствующие государственные органы и установленные законодательством сроки </span></p></div>
+                <div class="services__item wow pulse"><p class="services__item-label">Подготовка и подача отчетности <span>в соответствующие государственные органы и установленные законодательством сроки </span></p></div>
             </div>
         </div>
     </section>
@@ -143,10 +162,10 @@
         <div class="pacts__container _container">
             <div class="pacts-header">
                 <img class="pacts-circle" src="img/circle-form.svg" alt="">
-                <div class="pacts-header__left">
+                <div class="pacts-header__left wow slideInLeft">
                     <h2>Выберите для себя подходящий пакет для бухгалтерского обслуживания</h2>
                 </div>
-                <div class="pacts-header__right">
+                <div class="pacts-header__right wow  wow flipInX">
                     <div class="pacts-header__wrapper">
                         <!-- <img src="img/woman1.webp" alt="Выберите для себя подходящий пакет"> -->
                     </div>
@@ -176,7 +195,7 @@
                                 </ul>
                             </div>
                             <div class="tab-content__paks paks-content">
-                                <div class="paks-content__item">
+                                <div class="paks-content__item wow pulse">
                                     <h5>Пакет «Start»</h5>
                                     <ul>
                                         <li>от 2400</li>
@@ -185,7 +204,7 @@
                                         <li>от 3000</li>
                                     </ul>
                                 </div>
-                                <div class="paks-content__item">
+                                <div class="paks-content__item wow pulse">
                                     <h5>Пакет «Start»</h5>
                                     <ul>
                                         <li>от 2400</li>
@@ -237,7 +256,7 @@
                 </div>
                 <div class="advantages__wrapper-info">
                     <h4 class="advantages__wrapper-info__title">Почему с нами уже сотрудничают <span>56 компаний и 123 частных предпринимателя</span></h4>
-                    <div class="advantages__item">
+                    <div class="advantages__item wow rotateIn">
                         <div class="advantages__item-title">
                             <img src="./img/calculator.webp" alt="calculator">
                             <span class="adv__title">Сократим расходы на штатную бухгалтерию до 70% </span>
@@ -247,21 +266,21 @@
                 </div>
             </div>
             <div class="advantages__list">
-                <div class="advantages__item">
+                <div class="advantages__item wow rotateIn">
                     <div class="advantages__item-title">
                         <img src="./img/users.webp" alt="users">
                         <span class="adv__title"> Берем на себя все вопросы со стороны контролирующих органов.</span>
                     </div>
                     <p class="advantages__item-information">У нас большой опыт взаимодействия сналоговыми органами и мы знаем, как с ними решать вопросы</p>
                 </div>
-                <div class="advantages__item">
+                <div class="advantages__item wow rotateIn">
                     <div class="advantages__item-title">
                         <img src="./img/analytic.webp" alt="analytic">
                         <span class="adv__title">Безопасный он-лайн доступ к Вашей бухгалтерской базе.  </span>
                     </div>
                     <p class="advantages__item-information">Ежесуточное автоматическое резервное копирование бухгалтерской базы на серверном оборудовании для удаленного безопасного хранения данных.</p>
                 </div>
-                <div class="advantages__item">
+                <div class="advantages__item wow rotateIn">
                     <div class="advantages__item-title">
                         <img src="./img/lock.webp" alt="lock">
                         <span class="adv__title">Надежность и конфиденциальность </span>
@@ -271,7 +290,7 @@
             </div>
             <div class="advantages__saving">
 
-                <div class="advantages__saving-info">
+                <div class="advantages__saving-info wow fadeInDown">
                     <h5 class="advantages__saving-title">МК консалтинг сэкономит 
                         от <span>60 000 грн. в год</span></h5>
                     <p class="advantages__saving-subtitle">Гарантирует полный порядок в бухгалтерии 
@@ -279,7 +298,7 @@
                         компанию, не отвлекаясь на бухгалтерские
                         вопросы</p>
                 </div>
-                <form action="" id="form__info" class="advantages__saving-form">
+                <form action="" id="form__info" class="advantages__saving-form wow fadeInUp">
                     <p class="advantages__saving-form__title">Хотите тоже сэкономить на бухгалтерии?</p>
                     <input type="text" placeholder="Ваше имя">
                     <input type="text" placeholder="Телефон">
@@ -293,9 +312,9 @@
         <div class="_container">
             <h5 class="workprocess__title">Как мы работаем</h5>
             <div class="workprocess__wrapper">
-                <div class="workprocess__item"><span> Запрос клиента</span></div>
-                <div class="workprocess__item active_process"><span>Мониторинг услуг, соответствующих запросу</span></div>
-                <div class="workprocess__item"><span>Формирование пакета услуг и договор</span></div>
+                <div class="workprocess__item wow bounceInLeft"><span> Запрос клиента</span></div>
+                <div class="workprocess__item wow bounceInDown active_process"><span>Мониторинг услуг, соответствующих запросу</span></div>
+                <div class="workprocess__item wow bounceInRight"><span>Формирование пакета услуг и договор</span></div>
             </div>
         </div>
     </section>
@@ -311,7 +330,7 @@
                         чем штатный бухгалтер, 
                         потому что мы команда профессионалов.</p>
                 </div>
-                <div class="about__wrapper-image">
+                <div class="about__wrapper-image wow pulse">
                     <img src="./img/about.webp" alt="about_image">
                 </div>
             </div>
@@ -336,29 +355,29 @@
     <section class="for-whom" id="yak2">
         <div class="_container">
             <div class="for-whom__wrapper">
-                <div class="for-whom__wrapper-image">
+                <div class="for-whom__wrapper-image wow pulse">
                     <img src="./img/for-whom.webp" alt="for-whom_image">
                 </div>
                 <div class="for-whom__wrapper-info">
                     <h5 class="for-whom__title">Кому мы будем полезны</h5>
                     <div class="for-whom__advertisement">
-                        <div class="for-whom__item">
+                        <div class="for-whom__item wow rotateIn">
                             <img src="./img/itcompany.webp" alt="adv_img">
                             <p class="for-whom__item-info">ІТ компании.<span>Веб студии, разработчики ПО и мобильных приложений, интернет-маркетинговые агентства</span></p>
                         </div>
-                        <div class="for-whom__item">
+                        <div class="for-whom__item wow rotateIn">
                             <img src="./img/saling.webp" alt="adv_img">
                             <p class="for-whom__item-info">Торговля. <span>Оптовые компании, импорт/экспорт,компании розничной торговли, интернет-магазины, аптеки</span></p>
                         </div>
-                        <div class="for-whom__item">
+                        <div class="for-whom__item wow rotateIn">
                             <img src="./img/logistic.webp" alt="adv_img">
                             <p class="for-whom__item-info">Логистика <span>транспортные компании, складские операторы, экспедиторы,таможенные брокеры</span></p>
                         </div>
-                        <div class="for-whom__item">
+                        <div class="for-whom__item wow rotateIn">
                             <img src="./img/services_icon.webp" alt="adv_img">
                             <p class="for-whom__item-info">Услуги<span>Бюро переводов, рекрутеры, консультанты, клининговы компании, стоматологии, арендодатели, частные школы и садики</span></p>
                         </div>
-                        <div class="for-whom__item">
+                        <div class="for-whom__item wow rotateIn">
                             <img src="./img/coffee.webp" alt="adv_img">
                             <p class="for-whom__item-info">HORECA <span>рестораны, кофейни, пабы, бары,кафе, отели, хостел</span></p>
                         </div>
@@ -379,10 +398,10 @@
     <section class="contacts" id="yak3">
         <div class="_container">
             <div class="contacts__wrapper">
-                <div class="contacts__map">
+                <div class="contacts__map wow pulse">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2536.6817618440655!2d30.809867315733893!3d50.521487879485136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4d9138856b75b%3A0x8e87f8fe1139350e!2z0YPQuy4g0JzQtdGC0LDQu9C70YPRgNCz0L7QsiwgNCwg0JHRgNC-0LLQsNGA0YssINCa0LjQtdCy0YHQutCw0Y8g0L7QsdC70LDRgdGC0YwsIDA3NDAw!5e0!3m2!1sru!2sua!4v1600274269326!5m2!1sru!2sua" width="555" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                 </div>
-                <div class="contacts__info">
+                <div class="contacts__info wow pulse">
                     <h5 class="contacts__title">Наши контакты:</h5>
                     <div class="contacts__item">
                         <p class="contacts__item-title">Телефон</p>
@@ -434,6 +453,7 @@
         </div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="js/wow.min.js"></script>
     <script src="js/script.js" defer></script>
 </body>
 </html>

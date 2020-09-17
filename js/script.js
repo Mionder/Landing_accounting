@@ -46,3 +46,4 @@ btn.on('click', function(e) {
   $('html, body').animate({scrollTop:0}, '300');
 });
 
+new WOW().init();

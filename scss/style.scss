@@ -209,8 +209,12 @@ header{
     }
 }
 
-.header {
 
+.header {
+    //.header-mob
+    &-mob{
+        display: none;
+    }
     // .header__form
 
     &__form {
@@ -218,9 +222,9 @@ header{
     }
 }
 .form-header {
-    background: url(../img/bg_form1.png) no-repeat;
-    background-size: 111%;
-    background-position: 12% -13%;
+    background: url(../img/hand.png) no-repeat;
+    background-size: 108%;
+    background-position: 25% 99%;
     margin-bottom: -30px;
     // .form-header__control
 
@@ -273,6 +277,7 @@ header{
         border-radius: 5px;
         padding: 10px;
         transition: 0.3s;
+        box-shadow: 0 6px 33px 2px rgba(0, 0, 0, .5);
         &:hover{
            background-color: #FD8D6F;
            color: #000;
@@ -830,6 +835,11 @@ $color-red-light: #FD8D6F;
         line-height: 21px;
     }
 }
+#from-discover{
+    background: url(../img/finger.png) no-repeat;
+    background-size: 100% 100%;
+    min-height: 292px;
+}
 
 #form__info{
     border-radius: 10px;
@@ -1190,3 +1200,64 @@ $color-red-light: #FD8D6F;
         }
     }
 }
+
+#button {
+    display: inline-block;
+    background-color: #fd8d6f;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s, 
+      opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+  }
+  #button:hover {
+    cursor: pointer;
+    background-color: #4f5b6d;
+  }
+  #button:active {
+    background-color: #555;
+  }
+  #button.show {
+    opacity: 1;
+    visibility: visible;
+    display: flex;
+    justify-content: center;
+    img{
+        width: 60%;
+    }
+  }
+  
+  /* Styles for the content section */
+  
+  .content {
+    width: 77%;
+    margin: 50px auto;
+    font-family: 'Merriweather', serif;
+    font-size: 17px;
+    color: #6c767a;
+    line-height: 1.9;
+  }
+  @media (min-width: 500px) {
+    .content {
+      width: 43%;
+    }
+    #button {
+      margin: 30px;
+    }
+  }
+  .content h1 {
+    margin-bottom: -10px;
+    color: #03a9f4;
+    line-height: 1.5;
+  }
+  .content h3 {
+    font-style: italic;
+    color: #96a2a7;
+  }
