@@ -16,6 +16,29 @@
   .tab-content {
     flex-wrap: wrap; }
 
+  .for-whom .for-whom__wrapper .for-whom__wrapper-info .for-whom__advertisement .for-whom__item {
+    width: 100%;
+    margin-bottom: 18px; }
+
+  .for-whom .for-whom__wrapper .for-whom__wrapper-info .for-whom__title {
+    margin-bottom: 40px;
+    font-size: 32px;
+    line-height: 34px; }
+
+  .for-whom .other__questions {
+    margin-top: 70px; }
+
+  #form__question::after {
+    background-size: 32%; }
+
+  .for-whom .other__questions .other__questions-title {
+    line-height: 28px;
+    font-size: 28px;
+    margin-left: 30px; }
+
+  .for-whom .for-whom__wrapper .for-whom__wrapper-image {
+    margin-left: 20px; }
+
   .prices-content {
     width: 100%;
     margin-top: 30px; }
@@ -105,6 +128,29 @@
   .about__details-item {
     width: 31%; } }
 @media screen and (max-width: 992px) {
+  .for-whom .for-whom__wrapper {
+    flex-direction: column; }
+
+  .for-whom .for-whom__wrapper .for-whom__wrapper-image::after {
+    background-size: 45%; }
+
+  .for-whom .for-whom__wrapper .for-whom__wrapper-image {
+    margin-left: 70px; }
+
+  .for-whom .for-whom__wrapper .for-whom__wrapper-info {
+    margin-left: auto; }
+
+  .for-whom .for-whom__wrapper .for-whom__wrapper-info .for-whom__advertisement {
+    max-width: unset; }
+
+  .for-whom .for-whom__wrapper .for-whom__wrapper-image img {
+    width: 44%; }
+
+  .for-whom .for-whom__wrapper .for-whom__wrapper-info .for-whom__title {
+    text-align: right;
+    max-width: unset;
+    margin-top: 40px; }
+
   .tab-content__system {
     width: 100%; }
 
@@ -131,6 +177,19 @@
   .header__form {
     width: 100%;
     text-align: center; }
+
+  .for-whom .other__questions {
+    flex-direction: column; }
+
+  #form__question::after {
+    width: 100%;
+    top: -55%;
+    right: 22%; }
+
+  .for-whom .other__questions .other__questions-title {
+    margin-bottom: 40px;
+    margin-left: 0px;
+    max-width: 500px; }
 
   .services-actions h1 {
     width: 80%;
@@ -289,6 +348,34 @@
 @media screen and (max-width: 768px) {
   ._container {
     width: 85%; }
+
+  .for-whom {
+    padding: 70px 0px; }
+
+  .for-whom .for-whom__wrapper .for-whom__wrapper-image img {
+    width: 70%; }
+
+  .for-whom .other__questions {
+    margin-top: 20px; }
+
+  .for-whom .other__questions .other__questions-title {
+    line-height: 20px;
+    font-size: 20px; }
+
+  #form__question {
+    min-height: 248px; }
+
+  .for-whom .for-whom__wrapper .for-whom__wrapper-image::after {
+    background-size: 56%;
+    top: 58%;
+    right: 25%; }
+
+  .for-whom .for-whom__wrapper .for-whom__wrapper-info {
+    margin-top: 40px;
+    padding-left: 0px; }
+
+  .for-whom .for-whom__wrapper .for-whom__wrapper-info .for-whom__title {
+    text-align: left; }
 
   .about .about__wrapper {
     flex-direction: column;
