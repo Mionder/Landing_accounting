@@ -222,7 +222,7 @@ header{
     }
 }
 .form-header {
-    background: url(../img/hand.webp) no-repeat;
+    background: url(../img/hand.png) no-repeat;
     background-size: 108%;
     background-position: 25% 99%;
     margin-bottom: -30px;
@@ -322,7 +322,7 @@ header{
     &__right {
         width: 48%;
         max-width: 556px;
-        background: url(../img/woman1.webp) no-repeat;
+        background: url(../img/woman1.png) no-repeat;
         background-size: 144%;
         height: 373px;
         background-position: 44% 43%;
@@ -557,7 +557,7 @@ $color-red-light: #FD8D6F;
         position: absolute;
         top: 19%;
         right: -2%;
-        background: url(../img/q.webp) no-repeat;
+        background: url(../img/q.png) no-repeat;
         background-size: 100%;
         width: 23%;
         height: 100%;
@@ -573,7 +573,7 @@ $color-red-light: #FD8D6F;
         }
     }
     .questions__image::before{
-        content: url(../img/Ellipse.webp);
+        content: url(../img/Ellipse.png);
         left: -67px;
         position: absolute;
         bottom: 0px;
@@ -723,7 +723,7 @@ $color-red-light: #FD8D6F;
                 position: absolute;
                 top: -6%;
                 left: 53%;
-                background: url(../img/circle-adv.webp) no-repeat;
+                background: url(../img/circle-adv.png) no-repeat;
                 background-size: 62%;
                 height: 100%;
                 width: 100%;
@@ -738,7 +738,7 @@ $color-red-light: #FD8D6F;
             }    
         }
         // .advantages__wrapper-image::after{
-        //     content: url(../img/Ellipse.webp);
+        //     content: url(../img/Ellipse.png);
         //     position: absolute;
         //     right: -100px;
         //     top: -40px;
@@ -837,14 +837,14 @@ $color-red-light: #FD8D6F;
     }
 }
 #from-discover{
-    background: url(../img/finger.webp) no-repeat;
+    background: url(../img/finger.png) no-repeat;
     background-size: 100% 100%;
     min-height: 292px;
 }
 
 #form__info{
     border-radius: 10px;
-    background: url(../img/bg-formadv.webp) no-repeat;
+    background: url(../img/bg-formadv.png) no-repeat;
     background-size: 100% 100%;
     padding: 69px 69px 62px 69px;
     width: 48%;
@@ -853,7 +853,7 @@ $color-red-light: #FD8D6F;
     border-radius: 10px;
     background-color: #dbe7f3;
     padding: 69px 69px 62px 69px;
-    background: url(../img/bg-formadv.webp) no-repeat;
+    background: url(../img/bg-formadv.png) no-repeat;
     background-size: cover;
     max-width: 556px;
     width: 100%;
@@ -862,7 +862,7 @@ $color-red-light: #FD8D6F;
     &::after{
         position: absolute;
         content: "";
-        background: url(../img/q.webp) no-repeat;
+        background: url(../img/q.png) no-repeat;
         background-size: 45%;
         width: 100%;
         height: 100%;
@@ -935,7 +935,7 @@ $color-red-light: #FD8D6F;
         &::before{
             position: absolute;
             content: "";
-            background: url(../img/mk.webp) no-repeat;
+            background: url(../img/mk.png) no-repeat;
             background-size: 60%;
             width: 100%;
             height: 100%;
@@ -1074,7 +1074,7 @@ $color-red-light: #FD8D6F;
             &::after{
                 position: absolute;
                 content: "";
-                background: url(../img/Ellipse.webp) no-repeat;
+                background: url(../img/Ellipse.png) no-repeat;
                 background-size: 90%;
                 width: 100%;
                 height: 100%;
