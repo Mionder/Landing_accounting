@@ -80,7 +80,8 @@ header {
         -ms-flex-align: center;
             align-items: center; }
     .menu__list li {
-      font-family: 'Proba Pro SmBd'; }
+      font-family: 'Proba Pro SmBd';
+      outline: none; }
       .menu__list li a {
         text-decoration: none; }
   .menu__link {
