@@ -222,7 +222,7 @@ header{
     }
 }
 .form-header {
-    background: url(../img/hand.png) no-repeat;
+    background: url(../img/hand.webp) no-repeat;
     background-size: 108%;
     background-position: 25% 99%;
     margin-bottom: -30px;
@@ -1167,15 +1167,16 @@ $color-red-light: #FD8D6F;
             line-height: 21px;
         }
         .footer_navigation{
-            .footer__item{
+            .footer__item a{
                 cursor: pointer;
                 color: #000;
                 font-family: "Gilroy-SemiBold";
                 font-size: 15px;
                 transition: 0.5s;
                 line-height: 30px;
+                text-decoration: none;
             }
-            .footer__item:hover{
+            .footer__item a:hover{
                 color: #fd8d6f;
                 transition: 0.5s;
             }

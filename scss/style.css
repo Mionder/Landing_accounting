@@ -128,7 +128,7 @@ header {
   width: 49%; }
 
 .form-header {
-  background: url(../img/hand.png) no-repeat;
+  background: url(../img/hand.webp) no-repeat;
   background-size: 108%;
   background-position: 25% 99%;
   margin-bottom: -30px; }
@@ -847,14 +847,15 @@ header {
       font-size: 14px;
       font-family: "Gilroy-Light";
       line-height: 21px; }
-    .footer .footer__wrapper .footer_navigation .footer__item {
+    .footer .footer__wrapper .footer_navigation .footer__item a {
       cursor: pointer;
       color: #000;
       font-family: "Gilroy-SemiBold";
       font-size: 15px;
       transition: 0.5s;
-      line-height: 30px; }
-    .footer .footer__wrapper .footer_navigation .footer__item:hover {
+      line-height: 30px;
+      text-decoration: none; }
+    .footer .footer__wrapper .footer_navigation .footer__item a:hover {
       color: #fd8d6f;
       transition: 0.5s; }
     .footer .footer__wrapper .footer__social {
