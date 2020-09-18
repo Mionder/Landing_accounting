@@ -1,0 +1,181 @@
+@font-face {
+  font-family: 'Proba Pro';
+  src: url("../fonts/ProbaPro-Regular.woff2") format("woff2"), url("../fonts/ProbaPro-Regular.woff") format("woff"), url("../fonts/ProbaPro-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+@font-face {
+  font-family: 'Gilroy-Light';
+  src: url("../fonts/Gilroy-Light.woff2") format("woff2"), url("../fonts/Gilroy-Light.woff") format("woff"), url("../fonts/Gilroy-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap; }
+@font-face {
+  font-family: 'Gilroy-SemiBold';
+  src: url("../fonts/Gilroy-SemiBold.woff2") format("woff2"), url("../fonts/Gilroy-SemiBold.woff") format("woff"), url("../fonts/Gilroy-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap; }
+@font-face {
+  font-family: 'Proba Pro SmBd';
+  src: url("../fonts/ProbaPro-SemiBold.woff2") format("woff2"), url("../fonts/ProbaPro-SemiBold.woff") format("woff"), url("../fonts/ProbaPro-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap; }
+* {
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Proba Pro'; }
+
+._container {
+  width: 1144px;
+  margin: 0 auto; }
+
+._container__success {
+  width: 570px;
+  margin: 0 auto; }
+
+.success__page {
+  padding-bottom: 121px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh; }
+  .success__page .success__page-wrapper {
+    padding-top: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .success__page .success__page-wrapper .success__logo {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .success__page .success__page-wrapper .success__logo p {
+        color: #667794;
+        font-size: 15px;
+        font-family: "Gilroy-Light";
+        line-height: 19px;
+        margin-top: 11px;
+        max-width: 185px;
+        text-align: center; }
+    .success__page .success__page-wrapper .success__thanks {
+      padding-top: 150px;
+      width: 652px;
+      height: 560px;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: url(../img/M.png) center no-repeat; }
+      .success__page .success__page-wrapper .success__thanks .success__thanks-title {
+        color: #4F5B6D;
+        font-size: 50px;
+        margin-bottom: 30px;
+        font-family: 'Proba Pro SmBd'; }
+      .success__page .success__page-wrapper .success__thanks .success__thanks-subtitle {
+        max-width: 355px;
+        font-size: 20px;
+        color: #000000;
+        font-family: 'Proba Pro';
+        text-align: center;
+        margin-bottom: 99px; }
+      .success__page .success__page-wrapper .success__thanks .success__thanks-button {
+        width: 190px;
+        font-family: 'Proba Pro SmBd';
+        color: #fff;
+        background-color: #000;
+        border: none;
+        border-radius: 5px;
+        padding: 10px;
+        cursor: pointer;
+        position: relative;
+        z-index: 3;
+        transition: .3s;
+        box-shadow: 0 6px 33px 2px rgba(0, 0, 0, 0.5); }
+      .success__page .success__page-wrapper .success__thanks .success__thanks-button:hover {
+        background-color: #FD8D6F;
+        color: #000;
+        transition: .3s; }
+
+.footer {
+  background-color: #d7e2ef; }
+  .footer .footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 202px; }
+    .footer .footer__wrapper .footer__logo {
+      max-width: 250px; }
+      .footer .footer__wrapper .footer__logo p {
+        color: #667794;
+        font-size: 15px;
+        font-family: "Gilroy-Light";
+        line-height: 19px;
+        margin-top: 11px; }
+    .footer .footer__wrapper .footer__copyright {
+      max-width: 155px;
+      opacity: 0.45;
+      color: #667794;
+      font-size: 14px;
+      font-family: "Gilroy-Light";
+      line-height: 21px; }
+    .footer .footer__wrapper .footer_navigation .footer__item a {
+      cursor: pointer;
+      color: #000;
+      font-family: "Gilroy-SemiBold";
+      font-size: 15px;
+      transition: 0.5s;
+      line-height: 30px;
+      text-decoration: none; }
+    .footer .footer__wrapper .footer_navigation .footer__item a:hover {
+      color: #fd8d6f;
+      transition: 0.5s; }
+    .footer .footer__wrapper .footer__social {
+      max-width: 370px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end; }
+      .footer .footer__wrapper .footer__social .footer__social-icons a {
+        cursor: pointer; }
+      .footer .footer__wrapper .footer__social .footer__social-icons a:nth-child(2) {
+        margin: 0px 16px; }
+      .footer .footer__wrapper .footer__social .advertisement {
+        margin-top: 44px;
+        display: flex; }
+        .footer .footer__wrapper .footer__social .advertisement .footer__social-label {
+          color: #667794;
+          font-family: "Gilroy-Light";
+          font-size: 13px;
+          line-height: 24px;
+          letter-spacing: 0.31px;
+          margin-right: 11px; }
+
+@media screen and (max-width: 1080px) {
+  .footer {
+    padding: 15px 0px; }
+    .footer .footer__wrapper {
+      flex-direction: column;
+      justify-content: center; }
+      .footer .footer__wrapper .footer__social {
+        align-items: center; }
+      .footer .footer__wrapper .footer__copyright {
+        margin-bottom: 15px; }
+      .footer .footer__wrapper .footer__logo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 15px; }
+      .footer .footer__wrapper .footer_navigation {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 15px; } }
+@media screen and (max-width: 568px) {
+  .footer .footer__wrapper .footer__social .advertisement {
+    margin-top: 22px;
+    flex-direction: column;
+    align-items: center; } }
