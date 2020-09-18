@@ -25,6 +25,9 @@ function activeTab(el) {
 $(document).ready(function(){
   $("#menu").on("click","a", function (event) {
       event.preventDefault();
+      var activeLink = $(".menu__link-active");
+      activeLink.removeClass('menu__link-active');
+      $(this).addClass('menu__link-active');
       var id  = $(this).attr('href'),
           top = $(id).offset().top;
       $('body,html').animate({scrollTop: top}, 1500);
