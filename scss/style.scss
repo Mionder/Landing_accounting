@@ -98,8 +98,16 @@ header{
     // .menu__body
 
     &__body {
+        display: flex;
+        justify-content: space-between;
         padding-bottom: 22px;
-        border-bottom: 1px solid #CAD5E1
+        border-bottom: 1px solid #CAD5E1;
+        font-family: 'Proba Pro SmBd';
+        outline: none;
+        a{
+            text-decoration: none;
+            outline: none;
+        }
     }
 
     // .menu__list
@@ -108,11 +116,14 @@ header{
         display: flex;
         justify-content: space-between;
         align-items: center;
+        width: 100%;
+        max-width: 250px;
         li{
             font-family: 'Proba Pro SmBd';
             outline: none;
             a{
                 text-decoration: none;
+                outline: none;
             }
         }
     }
@@ -573,13 +584,15 @@ $color-red-light: #FD8D6F;
         }
     }
     .questions__image::before{
-        content: url(../img/Ellipse.png);
-        left: -67px;
+        content: "";
         position: absolute;
+        background: url(../img/Ellipse.png) no-repeat;
+        background-size: 78%;
+        left: -18%;
         bottom: 0px;
-        position: absolute;
-        max-width: 371px;
-        height: auto;
+        width: 100%;
+        top: 40%;
+        height: 100%;
     }
     .questions__info{
         padding-left: 20px;
@@ -1048,6 +1061,15 @@ $color-red-light: #FD8D6F;
                     text-decoration: none;
                     display: flex;
                     margin-bottom: 15px;
+                    outline: unset;
+                    &:first-child:hover{
+                        color: #fd8d6f;
+                        transition: 0.3s;
+                    }
+                    &:last-child:hover{
+                        color: #fd8d6f;
+                        transition: 0.3s;
+                    }
                     .telegram__icon{
                         margin: 0px 15px 0px 20px;
                     }
@@ -1175,6 +1197,7 @@ $color-red-light: #FD8D6F;
                 transition: 0.5s;
                 line-height: 30px;
                 text-decoration: none;
+                outline: none;
             }
             .footer__item a:hover{
                 color: #fd8d6f;
@@ -1195,6 +1218,9 @@ $color-red-light: #FD8D6F;
             .advertisement{
                 margin-top: 44px;
                 display: flex;
+                a{
+                    outline: none;
+                }
                 .footer__social-label{
                     color: #667794;
                     font-family: "Gilroy-Light";
@@ -1268,3 +1294,4 @@ $color-red-light: #FD8D6F;
     font-style: italic;
     color: #96a2a7;
   }
+  
