@@ -898,6 +898,13 @@
 }
 
 @media screen and (max-width: 414px){
+    .questions__wrapper{
+        .questions__image{
+            .questions__img{
+                max-width: 310px;
+            }
+        }
+    }  
     .form-header {
         background-size: 94%;
         padding-bottom: 136px;

@@ -8,7 +8,10 @@
     <link rel="stylesheet" href="scss/animate.css">
     <link rel="stylesheet" href="scss/style.css">
     <link rel="stylesheet" href="scss/media.css">
-
+    <link rel="preload" href="./fonts/ProbaPro-Regular.woff2" as="font" crossorigin>
+    <link rel="preload" href="./fonts/Gilroy-SemiBold.woff2" as="font" crossorigin>
+    <link rel="preload" href="./fonts/ProbaPro-SemiBold.woff2" as="font" crossorigin>
+    <link rel="preload" href="./fonts/Gilroy-Light.woff2" as="font" crossorigin>
 </head>
 <body>
     <!-- Back to top button -->
@@ -161,7 +164,7 @@
     <div class="pacts">
         <div class="pacts__container _container">
             <div class="pacts-header">
-                <img class="pacts-circle" src="img/circle-form.svg" alt="">
+                <img class="pacts-circle lazyload" data-src="img/circle-form.svg" alt="">
                 <div class="pacts-header__left wow slideInLeft">
                     <h2>Выберите для себя подходящий пакет для бухгалтерского обслуживания</h2>
                 </div>
@@ -252,7 +255,7 @@
         <div class="_container">
             <div class="advantages__wrapper">
                 <div class="advantages__wrapper-image wow pulse">
-                    <img src="./img/Advantages.png" alt="advantages_img">
+                    <img data-src="./img/Advantages.png" class="lazyload" alt="advantages_img">
                 </div>
                 <div class="advantages__wrapper-info">
                     <h4 class="advantages__wrapper-info__title">Почему с нами уже сотрудничают <span>56 компаний и 123 частных предпринимателя</span></h4>
@@ -331,7 +334,7 @@
                         потому что мы команда профессионалов.</p>
                 </div>
                 <div class="about__wrapper-image wow pulse">
-                    <img src="./img/about.png" alt="about_image">
+                    <img data-src="./img/about.png" class="lazyload" alt="about_image">
                 </div>
             </div>
             <div class="about__details">
@@ -356,7 +359,7 @@
         <div class="_container">
             <div class="for-whom__wrapper">
                 <div class="for-whom__wrapper-image wow pulse">
-                    <img src="./img/for-whom.png" alt="for-whom_image">
+                    <img data-src="./img/for-whom.png" class="lazyload" alt="for-whom_image">
                 </div>
                 <div class="for-whom__wrapper-info">
                     <h5 class="for-whom__title">Кому мы будем полезны</h5>
@@ -458,6 +461,7 @@
     </footer>
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <script src="js/wow.min.js" defer></script>
+    <script src="js/lazysizes.min.js" defer></script>
     <script src="js/script.js" defer></script>
 </body>
 </html>
