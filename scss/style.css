@@ -989,3 +989,48 @@ position: relative; }
 .content h3 {
   font-style: italic;
   color: #96a2a7; }
+
+  .second_paks{
+    max-height: 690px !important;
+  }
+
+  .second_paks li:first-child{
+    height: 63.6px;
+  }
+
+  .without{
+    position: absolute;
+    top: 103px;
+    width: 300px;
+    text-align: center;
+    z-index: 5;
+    border: none !important;
+    left: 20px;
+    background-color: #dfe8f3;
+    max-height: 60.5px;
+    font-family: "Gilroy-SemiBold" !important;
+    padding: 12px 0px 16px !important;
+  }
+  #without{
+    position: absolute;
+    top: 293px;
+    font-family: "Gilroy-SemiBold";
+    width: 300px;
+    text-align: center;
+    z-index: 5;
+    border: none;
+    left: 20px;
+    background-color: #dfe8f3;
+    max-height: 60.5px;
+    padding: 12px 0px 16px !important;
+  }
+
+  .second_paks:first-child li:nth-child(5),
+  .second_paks li:nth-child(4){
+    height: 63.6px;
+  }
+
+.tab-content__system li:first-child,
+.tab-content__system li:nth-child(4) {
+  height: 61px;
+}
