@@ -287,8 +287,7 @@ header {
         border-bottom: 2.5px solid #FD8D6F;
         color: #FD8D6F; }
   .main .tab-bar {
-    padding: 56px 0;
-    overflow: hidden; }
+    padding: 56px 0; }
     .main .tab-bar-content {
       display: none;
       width: 100%;
@@ -320,20 +319,57 @@ header {
   width: 41%;
   display: flex;
   justify-content: space-between;
-  max-width: 351px; }
+  max-width: 351px;
+  cursor: pointer;
+position: relative; }
   .paks-content__item {
     background-color: #DFE8F3;
     border-radius: 4px;
     text-align: center;
     box-shadow: 0 17px 17px rgba(0, 0, 0, 0.08);
     width: 47%;
-    max-height: 375px; }
-    .paks-content__item h5 {
+    max-height: 375px;
+    position: relative; }
+    .parks__info-alert__start{
+      position: absolute;
+      top: -90px;
+      background-color: #fff;
+      display: none;
+      padding: 40px 60px 40px 40px;
+      left: 120px;
+      right: -120px;
+    }
+    .parks__info-alert{
+      position: absolute;
+      top: -90px;
+      background-color: #fff;
+      display: none;
+      padding: 40px 60px 40px 40px;
+      left: 320px;
+      right: -320px;
+    }
+    .parks__info-alert__title{
       font-family: 'Gilroy-SemiBold';
       color: #000;
       font-size: 18px;
+      margin-bottom: 15px;
+    }
+    .parks__info-alert__details{
+      font-family: 'Gilroy-Light';
+      color: #667794;
+      line-height: 23px;
+    }
+    .paks-content__item h5 {
+      font-family: 'Gilroy-SemiBold';
+      color: #000;
+      transition: 0.3s;
+      font-size: 18px;
       border: 1px solid #D7DFEA;
       padding: 32px; }
+    .paks-content__item h5:hover{
+      color: #FD8D6F;
+      transition: 0.3s;
+    }
     .paks-content__item ul li {
       color: #667794;
       font-family: 'Gilroy-Light';
@@ -707,10 +743,10 @@ header {
         line-height: 40px;
         margin-bottom: 51px; }
       .about .about__wrapper .about__wrapper-info .about__subtitle {
-        color: #667794;
-        font-family: "Proba Pro";
-        font-size: 24px;
-        line-height: 26px; }
+        color: #4f5b6d;
+        font-family: "Proba Pro SmBd";
+        font-size: 17px;
+        line-height: 22px; }
   .about .about__details {
     display: flex;
     justify-content: space-between;

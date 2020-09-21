@@ -641,8 +641,9 @@
       flex-direction: column;
       align-items: center; }
       .workprocess .workprocess__wrapper .workprocess__item {
-        height: 280px;
-        width: 280px; }
+        height: 380px;
+        width: 380px;
+      }
       .workprocess .workprocess__wrapper .workprocess__item:first-child {
         transform: translateY(25px); }
       .workprocess .workprocess__wrapper .workprocess__item:last-child {
@@ -719,9 +720,9 @@
     max-width: 140px;
     margin: 0 auto; }
 
-  .workprocess .workprocess__wrapper .workprocess__item {
+  /* .workprocess .workprocess__wrapper .workprocess__item {
     height: 180px;
-    width: 180px; }
+    width: 180px; } */
 
   .pacts .pacts-header {
     flex-direction: column; }
@@ -926,9 +927,15 @@
   .about .about__wrapper-image {
     margin: 40px 40px 0px; } }
 @media screen and (max-width: 414px) {
+  .workprocess .workprocess__wrapper .workprocess__item {
+    height: 280px;
+    width: 280px; }
   .services .services__wrapper .services__item {
     height: 140px; }
-
+  .contacts__map.wow.pulse{
+    display: flex;
+    justify-content: center;
+  }
   .questions__wrapper .questions__info .decision__label {
     font-size: 20px;
     line-height: 20px; }

@@ -38,6 +38,18 @@ $(document).ready(function(){
     top = $(id).offset().top;
     $('body, html').animate({scrollTop: top}, 1500);
   });
+  $(".parks__pro").on("click", function (event){
+    $(".parks__info-alert").show();
+  });
+  $(".parks__start").on("click", function (event){
+    $(".parks__info-alert__start").show();
+  });
+  $(".parks__info-alert__start").on("click", function(){
+    $(".parks__info-alert__start").hide();
+  });
+  $(".parks__info-alert").on("click", function(){
+    $(".parks__info-alert").hide();
+  });
 });
 
 var btn = $('#button');
