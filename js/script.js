@@ -50,6 +50,9 @@ $(document).ready(function(){
   $(".parks__info-alert").on("click", function(){
     $(".parks__info-alert").hide();
   });
+  $(".answer").click(function (){
+
+  });
 });
 
 var btn = $('#button');
