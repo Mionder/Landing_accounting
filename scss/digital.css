@@ -37,11 +37,11 @@
     position: relative;
     opacity: 0.85;
 }
-.digital-right::after{
+.digital-right::before{
     content: "";
     position: absolute;
     bottom: -30%;
-    left: 63%;
+    left: 23%;
     background: url(../img/circle-adv.png) no-repeat;
     background-size: auto;
     background-size: 62%;
@@ -49,6 +49,7 @@
     width: 100%;
     opacity: 0.4;
     display: inline-block;
+    transform: scale(-1,1);
 }
 
 .digital-title{
@@ -119,11 +120,12 @@
     height: auto;
     padding: 10px 20px;
     border-radius: 8px;
-    font-size: 18px;
-    font-family: 'Gilroy-Light';
+    color: #667794;
+    font-family: "Gilroy-Light";
+    font-size: 15px;
+    line-height: 21px;
     text-align: left;
     background-color: #D7E2EF;
-    color:#000000;
     margin-top: 15px;
 }
 
@@ -152,9 +154,10 @@
     .digital-left{
         width: 100%;
     }
-    .digital-right::after{
-        bottom: -45%;
+    .digital-right::before{
+        bottom: -50%;
         background-size: 42%;
+        left: 8%;
     }
     .digital-questions{
         margin-top: 90px;
@@ -167,6 +170,9 @@
 @media(max-width: 576px){
     .digital-questions{
         flex-direction: column;
+    }
+    .digital-right::before{
+        bottom: -55%;
     }
     .digital-question{
         height: auto;
